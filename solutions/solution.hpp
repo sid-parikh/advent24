@@ -1,4 +1,5 @@
 #pragma once
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -21,8 +22,9 @@ template<class Derived>
 class Solution {
 public:
     void run() {
+        std::cout << "\n===============================";
         std::cout << "\n\nDay " << day << "\n";
-        std::cout << "--------------------------------------\n";
+        std::cout << "----------\n";
         std::cout << "Part 1:\n";
         std::cout << (static_cast<Derived*>(this)->part1());
         std::cout << "\n\nPart 2:\n";
