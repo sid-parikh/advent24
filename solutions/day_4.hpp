@@ -4,8 +4,16 @@
 
 class Day4 : public Solution<Day4> {
 public:
-    Day4() : Solution<Day4>(4) {
-        process();
+    Day4() : Solution<Day4>(4) {}
+
+    void process() {
+        auto istream = get_input();
+        std::string line;
+        while (std::getline(istream, line)) {
+            grid.emplace_back(line.begin(), line.end());
+        }
+        M = grid.size();
+        N = grid[0].size();
     }
 
     int part1() {
@@ -50,15 +58,6 @@ private:
     std::vector<std::vector<char>> grid;
     size_t M; // num rows
     size_t N; // num cols
-    void process() {
-        auto istream = get_input();
-        std::string line;
-        while (std::getline(istream, line)) {
-            grid.emplace_back(line.begin(), line.end());
-        }
-        M = grid.size();
-        N = grid[0].size();
-    }
 
     constexpr static std::string_view XMAS = "XMAS";
 
