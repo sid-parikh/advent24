@@ -4,6 +4,7 @@
 #include "day_3.hpp"
 #include "day_4.hpp"
 #include "day_5.hpp"
+#include "day_6.hpp"
 
 void run_all_solutions()
 {
@@ -12,4 +13,5 @@ void run_all_solutions()
     Day3().run();
     Day4().run();
     Day5().run();
+    Day6().run();
 }
