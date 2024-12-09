@@ -32,7 +32,7 @@ public:
     }
 
 protected:
-    Solution(int day) : day{day} {}
+    explicit Solution(int day) : day{day} {}
 
     std::ifstream get_input() {
         std::ifstream input{std::format("./input/day{:02}", day)};

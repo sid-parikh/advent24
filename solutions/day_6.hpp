@@ -11,8 +11,6 @@ public:
 
         process();
 
-
-
         int guard_i = start_i, guard_j = start_j;
         grid[start_i][start_j] = FREE;
 
