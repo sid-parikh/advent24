@@ -7,6 +7,7 @@
 #include "day_6.hpp"
 #include "day_7.hpp"
 #include "day_8.hpp"
+#include "day_9.hpp"
 
 void run_all_solutions()
 {
@@ -17,5 +18,6 @@ void run_all_solutions()
 //    Day5().run();
 //    Day6().run();
 //    Day7().run();
-    Day8().run();
+//    Day8().run();
+Day9().run();
 }
