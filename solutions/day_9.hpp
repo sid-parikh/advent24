@@ -50,10 +50,7 @@ public:
                     free_list.erase(loc);
                     break;
                 }
-
             }
-
-
         }
 
         return checksum();
@@ -151,4 +148,3 @@ private:
         return res;
     }
 };
-
