@@ -9,9 +9,14 @@
 #include "day_8.hpp"
 #include "day_9.hpp"
 #include "day_10.hpp"
+#include "day_11.hpp"
+
+#include <iostream>
 
 void run_all_solutions()
 {
+    // Unsynchronize C++ and C output streams
+    std::ios_base::sync_with_stdio(false);
 //    Day1().run();
 //    Day2().run();
 //    Day3().run();
@@ -21,5 +26,6 @@ void run_all_solutions()
 //    Day7().run();
 //    Day8().run();
 //    Day9().run();
-    Day10().run();
+//    Day10().run();
+    Day11().run();
 }
