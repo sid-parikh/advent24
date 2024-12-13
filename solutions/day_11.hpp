@@ -30,18 +30,9 @@ public:
     }
 
 private:
-    std::vector<unsigned long> stones;
+    std::vector<unsigned long> stones = {4189,413,82070,61,655813,7478611,0,8};
 
     void process() {
-        stones.clear();
-        stones.reserve(8);
-        auto istream = get_input();
-        std::string line;
-        std::getline(istream, line);
-        auto splt = split(line, ' ');
-        for (auto const& s: splt) {
-            stones.push_back(std::stoul(s));
-        }
         for (auto& m: memo) {
             m.reserve(10000);
         }
