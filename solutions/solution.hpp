@@ -5,18 +5,7 @@
 #include <string>
 #include <format>
 #include <sstream>
-
-std::vector<std::string> split(const std::string& s, char delim = ' ') {
-    std::istringstream iss{s};
-    std::string token;
-    std::vector<std::string> out{};
-    while (std::getline(iss, token, delim)) {
-        if (!token.empty()) {
-            out.push_back(token);
-        }
-    }
-    return out;
-}
+#include "utils.hpp"
 
 template<class Derived>
 class Solution {

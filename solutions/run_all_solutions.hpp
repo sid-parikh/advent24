@@ -12,6 +12,11 @@
 #include "day_11.hpp"
 #include "day_12.hpp"
 #include "day_13.hpp"
+#include "day_14.hpp"
+#include "day_15.hpp"
+#include "day_16.hpp"
+#include "day_17.hpp"
+#include "day_18.hpp"
 
 #include <iostream>
 
@@ -31,5 +36,10 @@ void run_all_solutions()
 //    Day10().run();
 //    Day11().run();
 //    Day12().run();
-    Day13().run();
+//    Day13().run();
+//    Day14().run();
+//    Day15().run();
+//    Day16().run();
+//    Day17().run();
+    Day18().run();
 }
